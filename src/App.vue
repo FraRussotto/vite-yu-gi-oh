@@ -5,6 +5,8 @@
   <h1>Yu-gi-oh</h1>
 </template>
 
-<style>
+<style lang="scss">
+
+@use './scss/main.scss';
 
 </style>

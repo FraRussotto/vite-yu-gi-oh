@@ -5,7 +5,7 @@ export default{
 </script>
 
 <template>
-  <div>Header</div>
+  <div></div>
 </template>
 
 <style>

@@ -1,8 +1,23 @@
 <script>
+
+import { store } from './data/store';
+import Header from './components/Header.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Header
+  },
+  data(){
+    return{
+      store,
+    }
+  }
+}
 </script>
 
 <template>
-  <h1>Yu-gi-oh</h1>
+  <Header />
 </template>
 
 <style lang="scss">

@@ -3,12 +3,14 @@ import axios from 'axios';
 import { store } from './data/store';
 import Header from './components/Header.vue';
 import CardContainer from './components/CardsContainer.vue'
+import ResultSearch from './components/ResultSearch.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    CardContainer
+    CardContainer,
+    ResultSearch
   },
   data(){
     return{
@@ -37,6 +39,7 @@ export default {
   <section>
     <CardContainer />
   </section>
+  <ResultSearch />
 </template>
 
 <style lang="scss">

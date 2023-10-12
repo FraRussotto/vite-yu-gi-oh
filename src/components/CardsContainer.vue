@@ -23,16 +23,10 @@ export default{
 
   <div class="container my-3">
     <div class="row_fr d-flex flex-wrap">
-        <card />
-        <card />
-        <card />
-        <card />
-        <card />
-        <card />
-        <card />
-        <card />
-        <card />
-        <card />
+        <card v-for="card  in store.cardList" :key="card.id"
+        :image="card.card_images[0].image_url"
+        :name="card.name"
+        :tipology="card.archetype"/>
       </div>
     </div>
 </template>
@@ -42,6 +36,6 @@ export default{
 @use './../scss/partials/variables' as *;
 
 .container{
-  background-color: $primary-color;
+  background-color: white;
 }
 </style>

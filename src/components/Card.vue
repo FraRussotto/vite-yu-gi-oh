@@ -1,25 +1,34 @@
 <script>
 export default{
   name: 'Card',
+  props: {
+    image: String,
+    name: String,
+    tipology: String
+  }
   }
 </script>
 
 <template>
   <div class="col_fr text-center d-flex flex-wrap">
     <div class="card_fr">
-      <img src="https://images.ygoprodeck.com/images/cards/64163367.jpg" alt="">
-      <span>"A" Cell Breeding Device</span>
-      <span>Alien</span>
+      <img :src="image" alt="">
+      <span>{{ name }}</span>
+      <span>{{ tipology }}</span>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+
+@use './../scss/partials/variables' as *;
+
 .col_fr{
   width: calc(100% / 5);
   
   .card_fr{
-    padding: 10px;
+    margin: 10px;
+    background-color: $primary-color;
     span{
       display: block;
       &:first-of-type{

@@ -1,14 +1,14 @@
 <script>
 export default{
-  name: 'Header',
-  props:{
-    logoImg: String
+  name: 'Card',
   }
-}
 </script>
 
 <template>
-  <div class="text-center my-1">Logo
+  <div class="col-3">
+    <div class="card_fr">
+      Card
+    </div>
   </div>
 </template>
 

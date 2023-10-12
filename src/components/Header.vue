@@ -8,9 +8,16 @@ export default{
 </script>
 
 <template>
-  <div class="text-center my-1">Logo
+  <div class="logo container">Yu-Gi-Oh Api
   </div>
 </template>
 
-<style>
+<style lang="scss">
+
+@use './../scss/partials/variables' as *;
+
+  .logo{
+    height: 40px;
+    font-size: 2rem;
+  }
 </style>

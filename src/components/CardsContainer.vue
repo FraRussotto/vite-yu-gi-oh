@@ -22,7 +22,9 @@ export default{
 <template>
 
   <div class="container my-3">
-    <div class="row">
+    <div class="row_fr d-flex flex-wrap">
+        <card />
+        <card />
         <card />
         <card />
         <card />
@@ -35,5 +37,11 @@ export default{
     </div>
 </template>
 
-<style>
+<style lang="scss" scope>
+
+@use './../scss/partials/variables' as *;
+
+.container{
+  background-color: $primary-color;
+}
 </style>

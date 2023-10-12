@@ -34,7 +34,9 @@ export default {
 
 <template>
   <Header />
-  <CardContainer />
+  <section>
+    <CardContainer />
+  </section>
 </template>
 
 <style lang="scss">
